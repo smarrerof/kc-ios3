@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeaturedViewController" customModule="TMDbCore" customModuleProvider="target">
             <connections>
+                <outlet property="loadingView" destination="iZU-MD-tzQ" id="Vk2-SS-zFP"/>
                 <outlet property="moviesLabel" destination="Wvn-6H-KIs" id="b6w-ug-CSc"/>
                 <outlet property="moviesStackView" destination="gOC-gZ-6gY" id="G0r-JE-mMx"/>
+                <outlet property="scrollView" destination="cOB-mT-zVj" id="Ltr-Ca-jGc"/>
                 <outlet property="showsLabel" destination="fvk-fo-JMz" id="AZS-P1-Te4"/>
                 <outlet property="showsStackView" destination="uRq-Mz-ice" id="vQZ-z8-CyU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -23,6 +25,9 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iZU-MD-tzQ">
+                    <rect key="frame" x="150" y="274" width="20" height="20"/>
+                </activityIndicatorView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-mT-zVj">
                     <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                     <subviews>
@@ -66,9 +71,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="iZU-MD-tzQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8BU-6D-CRk"/>
                 <constraint firstItem="cOB-mT-zVj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KcD-lZ-Gil"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cOB-mT-zVj" secondAttribute="bottom" id="VFl-js-6a8"/>
                 <constraint firstItem="cOB-mT-zVj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YaQ-ze-nP7"/>
+                <constraint firstItem="iZU-MD-tzQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rcc-Dn-lrP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cOB-mT-zVj" secondAttribute="trailing" id="zAM-9c-U2h"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
