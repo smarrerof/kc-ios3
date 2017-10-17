@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A9644F1F95F47D00D20ED0 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9644E1F95F47D00D20ED0 /* ShowRepository.swift */; };
+		49A964511F95F56200D20ED0 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A964501F95F56200D20ED0 /* ShowDetail.swift */; };
+		49A964531F95F7F400D20ED0 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A964521F95F7F400D20ED0 /* ShowPresenter.swift */; };
+		49A964551F95FA6B00D20ED0 /* DetailHeader+ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A964541F95FA6B00D20ED0 /* DetailHeader+ShowDetail.swift */; };
 		49C5EDE61F922EEF0061EDB8 /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5EDE51F922EEF0061EDB8 /* PersonPresenter.swift */; };
 		49C5EDE81F9230230061EDB8 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5EDE71F9230230061EDB8 /* PersonRepository.swift */; };
 		49C5EDEA1F92314B0061EDB8 /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5EDE91F92314B0061EDB8 /* PersonDetail.swift */; };
@@ -165,6 +169,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		49A9644E1F95F47D00D20ED0 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
+		49A964501F95F56200D20ED0 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
+		49A964521F95F7F400D20ED0 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
+		49A964541F95FA6B00D20ED0 /* DetailHeader+ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+ShowDetail.swift"; sourceTree = "<group>"; };
 		49C5EDE51F922EEF0061EDB8 /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
 		49C5EDE71F9230230061EDB8 /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		49C5EDE91F92314B0061EDB8 /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
@@ -311,9 +319,11 @@
 				992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */,
 				99F0564A1F8A3DBF00A680D8 /* Credits.swift */,
 				99F0564C1F8A3E3100A680D8 /* MovieDetail.swift */,
+				49A964501F95F56200D20ED0 /* ShowDetail.swift */,
 				49C5EDE91F92314B0061EDB8 /* PersonDetail.swift */,
 				49C5EDED1F9257310061EDB8 /* TaggedImage.swift */,
 				99F056531F8A5F9200A680D8 /* DetailHeader+MovieDetail.swift */,
+				49A964541F95FA6B00D20ED0 /* DetailHeader+ShowDetail.swift */,
 				49C5EDEB1F923C950061EDB8 /* DetailHeader+PersonDetail.swift */,
 				9923A74B1F8A664C00D3A6F7 /* PosterStripItem+CastMember.swift */,
 				49C5EDEF1F925A870061EDB8 /* PosterStripItem+TaggedImage.swift */,
@@ -538,6 +548,7 @@
 				996EAFE01F8007070060FD98 /* DetailHeaderPresenter.swift */,
 				998AD7D91F7FEFD400D3A222 /* PosterStripPresenter.swift */,
 				99F056511F8A5B4000A680D8 /* MoviePresenter.swift */,
+				49A964521F95F7F400D20ED0 /* ShowPresenter.swift */,
 				49C5EDE51F922EEF0061EDB8 /* PersonPresenter.swift */,
 			);
 			path = Presentation;
@@ -648,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				99F0564F1F8A5A0E00A680D8 /* MovieRepository.swift */,
+				49A9644E1F95F47D00D20ED0 /* ShowRepository.swift */,
 				49C5EDE71F9230230061EDB8 /* PersonRepository.swift */,
 			);
 			path = Repositories;
@@ -911,12 +923,15 @@
 				9989A1231F74EE8500D8DCA7 /* ImageRepository.swift in Sources */,
 				99C5C9051F7B77750038688F /* SearchResultsViewController.swift in Sources */,
 				99C5C9171F7B8E550038688F /* CardPresenter.swift in Sources */,
+				49A964531F95F7F400D20ED0 /* ShowPresenter.swift in Sources */,
 				49C5EDEE1F9257310061EDB8 /* TaggedImage.swift in Sources */,
 				99C5C90A1F7B78740038688F /* SearchResultsPresenter.swift in Sources */,
 				99F0564B1F8A3DBF00A680D8 /* Credits.swift in Sources */,
+				49A964551F95FA6B00D20ED0 /* DetailHeader+ShowDetail.swift in Sources */,
 				99B9A3381F73CB71004F883E /* Endpoint.swift in Sources */,
 				998AD7D81F7FEEF800D3A222 /* MediaType.swift in Sources */,
 				99B9A34A1F74181A004F883E /* Configuration.swift in Sources */,
+				49A964511F95F56200D20ED0 /* ShowDetail.swift in Sources */,
 				99A4653D1F7CE3B4007F3B5B /* PosterStripView.swift in Sources */,
 				993F1E801F7A9E2E004FE33B /* Person.swift in Sources */,
 				99B7FB8B1F88CDCC003CEF98 /* PhoneDetailNavigator.swift in Sources */,
@@ -924,6 +939,7 @@
 				99CA33E91F7B9E4700F77335 /* FeaturedViewController.swift in Sources */,
 				99A465311F7CD245007F3B5B /* DetailHeaderView.swift in Sources */,
 				49C5EDE81F9230230061EDB8 /* PersonRepository.swift in Sources */,
+				49A9644F1F95F47D00D20ED0 /* ShowRepository.swift in Sources */,
 				49C5EDF01F925A870061EDB8 /* PosterStripItem+TaggedImage.swift in Sources */,
 				997A44201F7AA4110094E928 /* UITableView+Reusable.swift in Sources */,
 				997A442A1F7AABD10094E928 /* ImageLoadingAssembly.swift in Sources */,

@@ -57,7 +57,7 @@ final class PersonPresenter: DetailPresenter {
         
         let items = person.taggedImages?.results
             .filter { $0.aspectRatio == (16/9) }
-            .map { PosterStripItem(media: $0.media) }
+            .map { PosterStripItem(taggedImage: $0) }
         
         if let items = items {
             detailSections.append(.posterStrip(title: "Known for", items: items))
