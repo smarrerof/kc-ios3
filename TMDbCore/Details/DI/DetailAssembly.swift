@@ -37,7 +37,8 @@ final class DetailAssembly {
 	func moviePresenter(identifier: Int64) -> DetailPresenter {
 		return MoviePresenter(repository: movieRepository(),
 		                      dateFormatter: webServiceAssembly.dateFormatter,
-		                      identifier: identifier)
+		                      identifier: identifier,
+                              navigator: detailNavigator())
 	}
 
 	func movieRepository() -> MovieRepositoryProtocol {
