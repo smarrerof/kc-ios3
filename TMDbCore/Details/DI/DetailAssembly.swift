@@ -59,7 +59,8 @@ final class DetailAssembly {
     func personPresenter(identifier: Int64) -> DetailPresenter {
         return PersonPresenter(repository: personRepository(),
                                dateFormatter: webServiceAssembly.dateFormatter,
-                               identifier: identifier)
+                               identifier: identifier,
+                               navigator: detailNavigator())
     }
     
     func personRepository() -> PersonRepositoryProtocol {

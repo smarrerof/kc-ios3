@@ -11,21 +11,21 @@ import RxSwift
 final class PersonPresenter: DetailPresenter {
     private let repository: PersonRepositoryProtocol
     private let dateFormatter: DateFormatter
-    
     private let identifier: Int64
+    private let navigator: DetailNavigator
+    
     private let disposeBag = DisposeBag()
-    
     weak var view: DetailView?
-    
     
     init(repository: PersonRepositoryProtocol,
          dateFormatter: DateFormatter,
-         identifier: Int64) {
+         identifier: Int64,
+         navigator: DetailNavigator) {
         self.repository = repository
         self.dateFormatter = dateFormatter
         self.identifier = identifier
+        self.navigator = navigator
     }
-    
     
     func didLoad() {
         view?.setLoading(true)
@@ -44,6 +44,14 @@ final class PersonPresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
+        switch item.mediaType {
+        case .movie:
+            navigator.showDetail(withIdentifier: item.identifier, mediaType: .movie)
+        case .show:
+            navigator.showDetail(withIdentifier: item.identifier, mediaType: .show)
+        case .person:
+            print("Incorrect mediaType")
+        }
     }
     
     private func detailSections(for person: PersonDetail) -> [DetailSection] {
