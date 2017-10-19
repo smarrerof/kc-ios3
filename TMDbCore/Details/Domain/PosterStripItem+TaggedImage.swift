@@ -20,8 +20,8 @@ extension PosterStripItem {
         case .show(let show):
             mediaType = .show
             identifier = show.identifier
-            title = show.name
-            metadata = show.name
+            title = show.title
+            metadata = show.title
             posterPath = show.backdropPath
         }
     }
