@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491B776F1FAC824F00A6E7A2 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B776E1FAC824F00A6E7A2 /* Array+Extensions.swift */; };
 		49A9644F1F95F47D00D20ED0 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9644E1F95F47D00D20ED0 /* ShowRepository.swift */; };
 		49A964511F95F56200D20ED0 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A964501F95F56200D20ED0 /* ShowDetail.swift */; };
 		49A964531F95F7F400D20ED0 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A964521F95F7F400D20ED0 /* ShowPresenter.swift */; };
@@ -169,6 +170,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		491B776E1FAC824F00A6E7A2 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		49A9644E1F95F47D00D20ED0 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
 		49A964501F95F56200D20ED0 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
 		49A964521F95F7F400D20ED0 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 				996690BC1F7A968700AF16B3 /* ReusableView.swift */,
 				996690BB1F7A968700AF16B3 /* UITableView+Reusable.swift */,
 				998AD7DB1F7FF5B700D3A222 /* UICollectionView+Reusable.swift */,
+				491B776E1FAC824F00A6E7A2 /* Array+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				49C5EDE81F9230230061EDB8 /* PersonRepository.swift in Sources */,
 				49A9644F1F95F47D00D20ED0 /* ShowRepository.swift in Sources */,
 				49C5EDF01F925A870061EDB8 /* PosterStripItem+TaggedImage.swift in Sources */,
+				491B776F1FAC824F00A6E7A2 /* Array+Extensions.swift in Sources */,
 				997A44201F7AA4110094E928 /* UITableView+Reusable.swift in Sources */,
 				997A442A1F7AABD10094E928 /* ImageLoadingAssembly.swift in Sources */,
 				997A441E1F7AA4110094E928 /* NibLoadableView.swift in Sources */,

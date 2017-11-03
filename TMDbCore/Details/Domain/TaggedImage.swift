@@ -36,3 +36,21 @@ struct TaggedImage: Decodable {
         }
     }
 }
+
+extension TaggedImage {
+    private var _proxyForEquatable : String {
+        switch media {
+        
+        case .movie(let movie):
+            return "\(movie.title)"
+        case .show(let show):
+            return "\(show.title)"
+        }
+    }
+}
+
+extension TaggedImage: Equatable {
+    static func ==(lhs: TaggedImage, rhs: TaggedImage) -> Bool {
+        return lhs._proxyForEquatable == rhs._proxyForEquatable
+    }
+}

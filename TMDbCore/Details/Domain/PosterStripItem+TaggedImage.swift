@@ -15,13 +15,13 @@ extension PosterStripItem {
             mediaType = .movie
             identifier = movie.identifier
             title = movie.title
-            metadata = movie.title
+            metadata = ""
             posterPath = movie.backdropPath
         case .show(let show):
             mediaType = .show
             identifier = show.identifier
             title = show.title
-            metadata = show.title
+            metadata = ""
             posterPath = show.backdropPath
         }
     }
